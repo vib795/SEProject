@@ -1,0 +1,20 @@
+.row.drop_img
+  .col-lg-2
+  .col-lg-10
+    %a{"data-target" => "#wiresharkModel", "data-toggle" => "modal", :type => "button"}
+      = image_tag "wireshark.png", alt: "Wireshark Icon"
+  .col-lg-2
+  
+
+#wiresharkModel.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "wiresharkModalCenterTitle", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-dialog-centered{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5#wiresharkModalCenterTitle.modal-title Choose An Interface
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        \...
+      .modal-footer
+        %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-primary{:type => "button"} Save changes
