@@ -2,6 +2,7 @@
 
 .container {
   margin-top: 40px;
+  margin-right: 200px;
 };
 
 body {
@@ -35,10 +36,6 @@ body {
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
-};
-
-.col-lg-10 .ac {
-
 };
 
 @-webkit-keyframes glow {
