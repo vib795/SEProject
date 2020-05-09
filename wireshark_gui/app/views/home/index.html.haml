@@ -1,9 +1,9 @@
 .row.drop_img
-  .col-lg-2
-  .col-lg-10
+  .col-lg-1
+  .col-lg-10.ac -# Leave for now
     %a{"data-target" => "#wiresharkModel", "data-toggle" => "modal", :type => "button"}
       = image_tag "wireshark.png", alt: "Wireshark Icon"
-  .col-lg-2
+  .col-lg-1
   
 
 #wiresharkModel.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "wiresharkModalCenterTitle", :role => "dialog", :tabindex => "-1"}
@@ -14,7 +14,6 @@
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} ×
       .modal-body
-        \...
-      .modal-footer
-        %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
-        %button.btn.btn-primary{:type => "button"} Save changes
+        = link_to 'eth0', interfaces_ethernet_path, remote: true, class: 'btn btn-warning btn-lg'
+        = link_to 'wlan0', interfaces_wireless_path, class: 'btn btn-info btn-lg'
+        = link_to 'localhost', interfaces_localhost_path, class: 'btn btn-success btn-lg'
