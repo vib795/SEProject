@@ -3,6 +3,7 @@ class InterfacesController < ApplicationController
 
   def index
     @interfaces = Interface.all
+    @colors = ['black', 'red', 'blue', 'yellow']
   end
 
   def ethernet

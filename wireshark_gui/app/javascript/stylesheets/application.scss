@@ -129,16 +129,55 @@ img:last-of-type:hover{
   text-align: center;
 };
 
+.bubble.black {
+  color: white;
+  background: black;
+};
+
+.bubble.red {
+  color: white;
+  background: red;
+};
+
+.bubble.blue {
+  color: white;
+  background: blue;
+};
+
+.bubble.yellow {
+  color: black;
+  background: yellow;
+};
+
 .pointer {
   height: 40px;
   width: 40px;
-  background: ivory;
   margin: 0 auto;
   transform: rotate(45deg);
   border-radius: 0 0 12px 0;
   margin-top: -22px;
   position: relative;
   left: calc(0.5vw - 50px);
+};
+
+.pointer.black {
+  color: white;
+  background: black;
+};
+
+.pointer.red {
+  color: white;
+  background: red;
+};
+
+.pointer.blue {
+  color: white;
+  background: blue;
+};
+
+.pointer.yellow {
+  color: black;
+  background: yellow;
 };
 
 .blurred {

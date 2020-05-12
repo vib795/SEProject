@@ -1,7 +1,7 @@
-- @interfaces.each do |interface|
+- @interfaces.each_with_index do |interface, i|
   %div
-    .bubble=interface.capture
-    .pointer
+    .bubble{class: "#{@colors[i % 4]}"}= interface.capture
+    .pointer{class: "#{@colors[i % 4]}"}
   %div
     .bubble.blurred
     .pointer.blurred
