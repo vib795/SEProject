@@ -119,7 +119,9 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.4)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
@@ -127,8 +129,8 @@ GEM
     msgpack (1.3.3-java)
     msgpack (1.3.3-x64-mingw32)
     msgpack (1.3.3-x86-mingw32)
-    nio4r (2.5.2)
-    nio4r (2.5.2-java)
+    nio4r (2.5.7)
+    nio4r (2.5.7-java)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-java)
@@ -158,9 +160,9 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (4.0.4)
-    puma (4.3.3)
+    puma (4.3.8)
       nio4r (~> 2.0)
-    puma (4.3.3-java)
+    puma (4.3.8-java)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-proxy (0.6.5)
@@ -221,7 +223,6 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
-    subprocess (1.5.3)
     temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
@@ -273,14 +274,13 @@ DEPENDENCIES
   pry-rails
   pry-rescue
   pry-stack_explorer
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.2)
   rainbow
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
-  subprocess
   tzinfo-data
   web-console (>= 3.3.0)
   webdrivers
